@@ -1,0 +1,23 @@
+{
+	"/": [],
+	"/api/auth/login": [
+		"src/routes/api/auth/login/+server.ts"
+	],
+	"/api/auth/logout": [
+		"src/routes/api/auth/logout/+server.ts"
+	],
+	"/api/auth/register": [
+		"src/routes/api/auth/register/+server.ts"
+	],
+	"/api/moods": [
+		"src/routes/api/moods/+server.ts"
+	],
+	"/api/quote": [
+		"src/routes/api/quote/+server.ts"
+	],
+	"/dashboard": [],
+	"/dashboard/mood-tracker": [],
+	"/dashboard/stats": [],
+	"/login": [],
+	"/register": []
+}

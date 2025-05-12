@@ -1,0 +1,34 @@
+
+
+datasource db {
+  provider = "sqlite" 
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          Int          @id @default(autoincrement())
+  email       String       @unique
+  username    String?
+  password    String      
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  moodEntries MoodEntry[]
+}
+
+model MoodEntry {
+  id        Int      @id @default(autoincrement())
+  date      DateTime // The specific date for which the mood is logged
+  mood      String   // e.g., "happy", "sad", "neutral", "excited", "calm", "anxious"
+  notes     String?  // Optional notes from the user
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([userId, date]) // Index for faster querying of user's mood on a specific date
+}
+

@@ -1,0 +1,91 @@
+/* Global styles  */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e0f7fa; 
+  color: #333;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Utility classes for colors */
+.bg-primary-blue {
+  background-color: #3498db; /* Main blue */
+}
+
+.text-primary-blue {
+  color: #3498db;
+}
+
+.bg-accent-pink {
+  background-color: #e91e63; /* Pink accent */
+}
+
+.text-accent-pink {
+  color: #e91e63;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Basic button styling  */
+button, .button {
+  background-color: #3498db; /* Blue */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+button.pink, .button.pink {
+  background-color: #e91e63; /* Pink */
+}
+
+button.pink:hover, .button.pink:hover {
+  background-color: #c2185b; /* Darker pink */
+}
+
+/* Basic form styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #2c3e50; /* Darker text color for headings */
+}
+
