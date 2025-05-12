@@ -4,7 +4,6 @@
 
 Mimimood is a web application designed to help users track their mental health and well-being. Users can log their daily moods, add notes, view their mood history and statistics, and get a daily dose of motivation through inspirational quotes. The project aims to provide a simple, user-friendly interface for individuals to become more aware of their emotional patterns and promote mental wellness.
 
-This project was developed to demonstrate proficiency in web development using SvelteKit, TypeScript, and Prisma, fulfilling requirements for a complex application build.
 
 ## 2. Implementation Details
 
@@ -224,7 +223,4 @@ The project utilizes several custom Svelte components, including but not limited
 8.  Mood Entry Display Card (within `dashboard/stats/+page.svelte`)
 9.  Quote Display section (within `dashboard/+page.svelte`)
 
-(The requirement was for at least eight; the structure promotes component-based design.)
-
-This README provides an overview of the Mimimood project. For more detailed information, please refer to the source code and comments within the files.
 
